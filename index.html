@@ -895,7 +895,7 @@
  <span class="jc-icon"></span>
  <div class="jc-title">Difunde su labor</div>
  <div class="jc-desc">Compartir información verídica sobre la migración ayuda a combatir prejuicios. La OIM publica historias reales que vale la pena difundir.</div>
- <a href="#" class="jc-btn">Compartir</a>
+ <button onclick="compartirOIM()" class="jc-btn" style="border:none;cursor:pointer;font-family:'Englebert',sans-serif;">Compartir</button>
  </div>
  </div>
  </div>
@@ -944,6 +944,35 @@
 </footer>
 
 <script>
+// Web Share API
+async function compartirOIM() {
+  const data = {
+    title: 'Organización Internacional para las Migraciones (OIM)',
+    text: 'Ayúdame a difundir información sobre la Organización Internacional para las Migraciones, una institución muy importante para la sociedad:',
+    url: 'https://www.iom.int/es'
+  };
+  if (navigator.share) {
+    try {
+      await navigator.share(data);
+    } catch (e) {
+      if (e.name !== 'AbortError') {
+        fallbackCopiar();
+      }
+    }
+  } else {
+    fallbackCopiar();
+  }
+}
+
+function fallbackCopiar() {
+  const texto = 'Ayúdame a difundir información sobre la Organización Internacional para las Migraciones, una institución muy importante para la sociedad: https://www.iom.int/es';
+  navigator.clipboard.writeText(texto).then(() => {
+    alert('Enlace copiado al portapapeles. ¡Compártelo donde quieras!');
+  }).catch(() => {
+    prompt('Copia este texto y compártelo:', texto);
+  });
+}
+
 // Region pills
 document.querySelectorAll('.region-pill').forEach(pill => {
  pill.addEventListener('click', () => {
