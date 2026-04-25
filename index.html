@@ -26,6 +26,10 @@
  --text-muted: #5A7385;
  --radius: 20px;
  --radius-sm: 12px;
+    --unacar: #F7E455;
+    --unacar-dark: #c9b800;
+    --gray: #6B7280;
+    --gray-light: #F3F4F6;
  }
 
  html { scroll-behavior: smooth; }
@@ -600,10 +604,17 @@
  Proyecto académico · Escuela Preparatoria Diurna, Campus II · UNACAR · Grupo "C" · 4to semestre &nbsp;|&nbsp; Con fines informativos y educativos
 </div>
 <nav>
- <a class="nav-logo" href="#">
- <div class="logo-badge" style="width:52px;height:36px;border-radius:8px;overflow:hidden;background:white;padding:3px;"><img src="https://extranet.itcilo.org/promotionbanners/iom-logo/download" style="width:100%;height:100%;object-fit:contain;" alt="OIM Logo"></div>
- OIM <span>Internacional</span>
- </a>
+ <div class="nav-brand">
+   <a href="https://www.unacar.mx/" target="_blank" class="unacar-logo-link">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Slogan_Administraci%C3%B3n_2022_-_2026.png/330px-Slogan_Administraci%C3%B3n_2022_-_2026.png" alt="UNACAR" class="unacar-logo-img">
+     <span class="unacar-label">UNACAR</span>
+   </a>
+   <div class="nav-divider"></div>
+   <a class="nav-logo" href="https://mexico.iom.int/es" target="_blank">
+     <div class="logo-badge" style="width:52px;height:36px;border-radius:8px;overflow:hidden;background:white;padding:3px;"><img src="https://extranet.itcilo.org/promotionbanners/iom-logo/download" style="width:100%;height:100%;object-fit:contain;" alt="OIM Logo"></div>
+     OIM
+   </a>
+ </div>
  <ul class="nav-links">
  <li><a href="https://www.iom.int/es/mision" target="_blank">Misión</a></li>
  <li><a href="https://governingbodies.iom.int/es/programas-y-presupuestos" target="_blank">Programas</a></li>
@@ -632,7 +643,7 @@
  </div>
  <div class="hero-inner">
  <div class="hero-content">
- <div class="hero-tag">Ciencias Sociales · EPD Campus II · UNACAR · Grupo C</div>
+ <div class="hero-tag">Ciencias Sociales · EPD Campus II · <span style="color:var(--unacar);font-weight:900;">UNACAR</span> · Grupo C</div>
  <h1>Así trabaja<br><em>la OIM</em><br>en el mundo.</h1>
  <p>Este sitio es el complemento digital del logo 3D de la OIM elaborado para la asignatura de Ciencias Sociales. Su propósito es divulgar el trabajo de la Organización Internacional para las Migraciones: quiénes son, qué hacen y por qué importa.</p>
  <div class="hero-btns">
@@ -749,7 +760,7 @@
  <div class="section-inner">
  <div class="programs-header">
  <div>
- <div class="section-tag">¿Qué hace la OIM?</div>
+ <div class="section-tag" style="background:#FEF9C3;color:#92700A;">¿Qué hace la OIM?</div>
  <h2 class="section-title">Sus principales áreas de acción</h2>
  </div>
  <a href="https://governingbodies.iom.int/es/programas-y-presupuestos" target="_blank" class="btn-primary" style="font-size:0.9rem;padding:10px 24px;text-decoration:none">Ver todos los programas</a>
@@ -811,7 +822,7 @@
  <button class="region-pill" data-url="https://roasiapacific.iom.int/"> Asia-Pacífico</button>
  <button class="region-pill" data-url="https://eca.iom.int/"> Europa-Asia Central</button>
  </div>
- <a id="explore-btn" href="https://lac.iom.int/es" target="_blank" class="btn-primary" style="text-decoration:none; display:inline-block;">Explorar oficinas regionales</a>
+ <a id="explore-btn" href="https://lac.iom.int/es" target="_blank" class="btn-primary" style="text-decoration:none;display:inline-block;background:var(--unacar);color:var(--text);box-shadow:0 4px 20px rgba(247,228,85,0.4);">Explorar oficinas regionales</a>
  </div>
 </div>
 
@@ -885,7 +896,7 @@
 <!-- JOIN -->
 <section class="join" id="donar">
  <div class="section-inner" style="text-align:center">
- <div class="section-tag orange">¿Quieres involucrarte?</div>
+ <div class="section-tag" style="background:#FEF9C3;color:#92700A;">¿Quieres involucrarte?</div>
  <h2 class="section-title">Formas de apoyar la labor de la OIM</h2>
  <p class="section-sub" style="margin:0 auto">Dentro de este proyecto de Ciencias Sociales se identificaron distintas maneras en que la sociedad puede vincularse con la misión de la OIM, desde la donación hasta la difusión de información.</p>
  <div class="join-cards">
@@ -985,11 +996,11 @@
  </div>
  <div class="footer-col" style="grid-column: span 2;">
  <h4>Aviso Académico</h4>
- <p style="font-size:0.82rem;line-height:1.7;color:rgba(255,255,255,0.65);max-width:520px;">Este sitio fue desarrollado como complemento digital del logo 3D de la OIM, dentro de la asignatura de Ciencias Sociales, por estudiantes del 4to semestre, grupo "C", de la Escuela Preparatoria Diurna, Unidad Académica Campus II, de la Universidad Autónoma del Carmen (UNACAR). Su propósito es exclusivamente académico e informativo, y no pretende sustituir ni replicar el sitio oficial de la Organización Internacional para las Migraciones.</p>
+ <p style="font-size:0.82rem;line-height:1.7;color:rgba(255,255,255,0.65);max-width:520px;">Este sitio fue desarrollado como complemento digital del logo 3D de la OIM, dentro de la asignatura de Ciencias Sociales, por estudiantes del 4to semestre, grupo "C", de la Escuela Preparatoria Diurna, Unidad Académica Campus II, de la <a href="https://www.unacar.mx/" target="_blank" style="color:var(--unacar);text-decoration:none;font-weight:700;">Universidad Autónoma del Carmen (UNACAR)</a>. Su propósito es exclusivamente académico e informativo, y no pretende sustituir ni replicar el sitio oficial de la Organización Internacional para las Migraciones.</p>
  </div>
  </div>
  <div class="footer-bottom">
- <div>Ciencias Sociales · EPD Campus II · UNACAR · Grupo "C" · 4to semestre · 2026</div>
+ <div>Ciencias Sociales · EPD Campus II · <a href="https://www.unacar.mx/" target="_blank" style="color:var(--unacar);text-decoration:none;font-weight:700;">UNACAR</a> · Grupo "C" · 4to semestre · 2026</div>
  <div>Información tomada del sitio oficial: <a href="https://mexico.iom.int/es" target="_blank" style="color:var(--blue);text-decoration:none;">mexico.iom.int</a></div>
  </div>
 </footer>
